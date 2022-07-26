@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <white_board
+            id="2001"
+            name="TestListBoard_2001"
+            type="BASIC"
+            created_at="[now-2d]"
+            last_modified_at="[now-1d]"
+            created_by="19957"
+            last_modified_by="19957"/>
+    <white_board
+            id="2002"
+            name="TestListBoard_2002"
+            type="BASIC"
+            created_at="[now-2d]"
+            last_modified_at="[now-1d]"
+            created_by="19957"
+            last_modified_by="19957"/>
+    <white_board
+            id="2003"
+            name="TestListBoard_2003"
+            type="BASIC"
+            created_at="[now-2d]"
+            last_modified_at="[now-1d]"
+            created_by="19957"
+            last_modified_by="19957"/>
+    <white_board
+            id="2004"
+            name="TestListBoard_2004"
+            type="BASIC"
+            created_at="[now-2d]"
+            last_modified_at="[now-1d]"
+            created_by="2004"
+            last_modified_by="2004"/>
+    <white_board_user
+            id="2004"
+            user_id="19957"
+            board_id="2004"/>
+
+    <white_board
+            id="2005"
+            name="TestListBoard_2005"
+            type="BASIC"
+            created_at="[now-2d]"
+            last_modified_at="[now-1d]"
+            created_by="2005"
+            last_modified_by="2005"/>
+    <white_board_user
+            id="2005"
+            user_id="19957"
+            board_id="2005"
+            deleted_by="19957"
+            deleted_at="[now]"
+    />
+</dataset>

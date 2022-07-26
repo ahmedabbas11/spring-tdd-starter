@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <white_board
+            id="10005"
+            name="TestAddUserBoard_10005"
+            type="BASIC"
+            created_by="19957"/>
+    <white_board_user
+            id="10005"
+            user_id="10005"
+            board_id="10005"
+    />
+</dataset>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <white_board
+            id="10002"
+            name="TestAddUserBoard_10002"
+            type="BASIC"
+            created_by="11002"/>
+    <white_board_user/>
+    <!-- empty table mentioned here to delete it as well or else integrity exception will occur-->
+</dataset>

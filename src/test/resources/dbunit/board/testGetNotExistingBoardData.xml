@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <white_board
+            id="2000"
+            name="TestListBoard_2000"
+            type="BASIC"
+            created_by="2000"/>
+    <white_board_user />
+</dataset>
