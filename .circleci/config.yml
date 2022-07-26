@@ -44,3 +44,22 @@ jobs:
 
       # run tests!
       - run: ./gradlew test
+  
+  print_hello:
+    docker: # executor type
+      - image: circleci/node:13.8.0
+    steps:
+      - run: echo "hello"
+  print_world:
+    docker: # executor type
+      - image: circleci/node:13.8.0
+    steps:
+      - run: echo "world"
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - print_hello
+    - build
+    - print_world
