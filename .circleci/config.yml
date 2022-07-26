@@ -51,8 +51,6 @@ jobs:
     steps:
       - run: echo "hello"
   print_world:
-    requires:
-            - build
     docker: # executor type
       - image: circleci/node:13.8.0
     steps:
@@ -64,4 +62,6 @@ workflows:
     jobs:
     - print_hello
     - build
-    - print_world
+    - print_world:
+        requires:
+            - build
