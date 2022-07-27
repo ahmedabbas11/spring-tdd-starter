@@ -58,7 +58,7 @@ jobs:
     docker: # executor type
       - image: circleci/node:13.8.0
     steps:
-      - run: echo "world"
+      - run: echo 'world << pipeline.id >>'
 
 workflows:
   version: 2
