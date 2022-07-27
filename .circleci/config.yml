@@ -49,7 +49,7 @@ jobs:
     docker: # executor type
       - image: circleci/node:13.8.0
     steps:
-      - run: echo 'hello $MY_NAME'
+      - run: echo $MY_NAME
   print_world:
     docker: # executor type
       - image: circleci/node:13.8.0
