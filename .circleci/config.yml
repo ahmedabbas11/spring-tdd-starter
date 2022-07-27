@@ -58,7 +58,7 @@ jobs:
     docker: # executor type
       - image: circleci/node:13.8.0
     steps:
-      - run: echo << pipeline.id >>
+      - run: echo "This is pipeline ID << pipeline.id >>"
 
 workflows:
   version: 2
