@@ -50,6 +50,10 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: echo $MY_NAME
+      - run:
+          name: "echo an env var that is part of our project"
+          command: |
+            echo $MY_NAME
   print_world:
     docker: # executor type
       - image: circleci/node:13.8.0
