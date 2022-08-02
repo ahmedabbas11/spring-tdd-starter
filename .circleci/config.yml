@@ -71,8 +71,8 @@ workflows:
   version: 2
   workflow:
     jobs:
-    - print_hello
     - build
-    - print_world:
+    - save_hello_world_output
+    - print_output_file:
         requires:
-            - build
+            - save_hello_world_output
