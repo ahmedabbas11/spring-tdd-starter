@@ -54,16 +54,16 @@ jobs:
           command: |
             echo "abbas abbas abbas" > output.txt
       - persist_to_workspace:
-          root: /
+          root: .
           paths:
-            - output.txt
+            - ./output.txt
             
   print_output_file:
     docker: # executor type
       - image: circleci/node:13.8.0
     steps:
       - attach_workspace:
-          at: /
+          at: .
       - run: cat output.txt
       
 
