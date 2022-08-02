@@ -45,20 +45,27 @@ jobs:
       # run tests!
       - run: ./gradlew test
   
-  print_hello:
+  save_hello_world_output:
     docker: # executor type
       - image: circleci/node:13.8.0
     steps:
-      - run: echo $MY_NAME
       - run:
-          name: "echo an env var that is part of our project"
+          name: "save text to file"
           command: |
-            echo $MY_NAME
-  print_world:
+            echo "abbas abbas abbas" > output.txt
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - output.txt
+            
+  print_output_file:
     docker: # executor type
       - image: circleci/node:13.8.0
     steps:
-      - run: echo "This is pipeline ID << pipeline.id >>"
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: cat output.txt
+      
 
 workflows:
   version: 2
