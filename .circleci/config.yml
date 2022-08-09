@@ -77,6 +77,16 @@ jobs:
       - attach_workspace:
           at: .
       - run: cat output.txt
+  
+  crated_to_fail:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - run: return 1
+      - run:
+          name: handle failure
+          command: echo "SOS system failed!!!!"
+          when: on_fail
       
 
 workflows:
