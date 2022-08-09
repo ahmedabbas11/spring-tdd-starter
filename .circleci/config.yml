@@ -78,7 +78,7 @@ jobs:
           at: .
       - run: cat output.txt
   
-  crated_to_fail:
+  created_to_fail:
     docker:
       - image: circleci/node:13.8.0
     steps:
@@ -98,3 +98,4 @@ workflows:
     - print_output_file:
         requires:
             - save_hello_world_output
+    - created_to_fail
